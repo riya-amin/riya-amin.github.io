@@ -12,74 +12,218 @@
         }
         body {
             font-family: 'Arial', sans-serif;
-            background: #f7f7f7;
+            background-color: #f3e5f5;
             color: #333;
             line-height: 1.6;
-            animation: fadeIn 1s ease-out;
+            padding: 0;
+            margin: 0;
         }
         header {
-            background: #4CAF50;
+            background: linear-gradient(90deg, #d1c4e9, #f8bbd0);
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
-            font-size: 2.5em;
-            animation: slideIn 1s ease-out;
+            font-size: 3em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
         }
         header h1 {
+/*            text-transform: uppercase;*/
+            letter-spacing: 2px;
             animation: fadeInUp 2s ease-in-out;
         }
         nav {
-            text-align: center;
+            display: flex;
+            justify-content: center;
             margin-top: 20px;
+            background-color: #f8bbd0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
         }
         nav a {
             text-decoration: none;
-            color: #333;
-            padding: 15px;
-            font-size: 1.2em;
-            margin: 0 10px;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.3em;
+            margin: 0 15px;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
         nav a:hover {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #d1c4e9;
+            transform: scale(1.05);
         }
         section {
-            padding: 30px;
+            padding: 50px 20px;
             max-width: 1200px;
             margin: 30px auto;
             background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             animation: fadeIn 1.5s ease-in-out;
         }
         section h2 {
             font-size: 2.5em;
-            color: #4CAF50;
+            color: #d1c4e9;
             text-align: center;
             margin-bottom: 20px;
         }
         .content {
             font-size: 1.2em;
+            line-height: 1.8;
         }
-        .experience, .research {
+        .content p {
+            margin-bottom: 15px;
+        }
+        .experience, .research, .projects, .certificates, .contact {
             display: flex;
             flex-direction: column;
+            gap: 20px;
         }
-        .experience div, .research div {
-            margin-bottom: 20px;
+        .experience div, .research div, .projects div, .certificates div {
+            background: #ffc5d957;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+        /* ABOUT ME */
+        #about {
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #d1c4e9;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;  /* Adjust spacing between image and text */
+}
+
+.about-img {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    
+}
+
+.profile-img {
+    width: 150px; /* Adjust the size of the photo */
+    height: 150px;
+    object-fit: cover;  /* Ensures the image fits without distortion */
+    border-radius: 50%;  /* Makes the image round */
+    border: 1px solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex-grow: 1;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+}
+
+        
+        /* EDUCATION */
+        .education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.university-logo {
+    width: 250px;  /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 20px;
+}
+
+.education-item div {
+    flex-grow: 1;
+}
+
+.education-item h3 {
+    margin-bottom: 10px;
+    color: #d1c4e9;
+}
+
+.education-item p {
+    font-size: 1.1em;
+}
+        
+        /* EXPERIENCE */
+        .experience ul {
+            margin-left: 15px;
+        }
+        
+        .experience li {
+            margin-left: 10px
+        }
+        
+        /* RESEARCH */
+        .research ul {
+            margin-left: 15px;
+        }
+        
+        .research li {
+            margin-left: 10px
+        }
+        
+
         footer {
             text-align: center;
             background: #333;
             color: white;
-            padding: 10px;
+            padding: 15px;
+            font-size: 1.1em;
             position: fixed;
             width: 100%;
             bottom: 0;
-            animation: slideIn 1s ease-out;
         }
+
+        #contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #d1c4e9;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+.contact-button {
+    text-decoration: none;
+    background-color: #d1c4e9;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #f8bbd0;
+    transform: scale(1.05);
+}
 
         @keyframes fadeIn {
             0% { opacity: 0; }
@@ -98,7 +242,8 @@
 <body>
 
 <header>
-    <h1>Riya Amin</h1>
+    <h1>Riya Amin Shah</h1>
+    <p>B. Biomed, M. Pharm</p>
 </header>
 
 <nav>
@@ -106,19 +251,43 @@
     <a href="#education">Education</a>
     <a href="#experience">Experience</a>
     <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+<!--    <a href="#contact">Contact Me</a>-->
 </nav>
 
 <section id="about">
     <h2>About Me</h2>
-    <div class="content">
-        <p>Hello! I'm Riya, a passionate pharmacy professional with a focus on regulatory affairs. I am currently seeking internship opportunities where I can apply my knowledge of pharmacy laws and regulations while growing my skills in a dynamic environment.</p>
+    <div class="about-content">
+        <div class="about-img">
+            <img src="/docs/riya-amin.jpeg" alt="Your Photo" class="profile-img">
+        </div>
+        <div class="about-text">
+            <p>Hello! I'm a passionate pharmacy professional with a particular interest in regulatory affairs. I am currently seeking internship opportunities in the pharmaceutical field where I can apply my knowledge of drug safety and regulatory compliance.</p>
+            <p>In my free time, I enjoy staying updated on the latest trends in pharmaceutical laws, as well as contributing to research on improving patient outcomes. I'm always eager to learn and grow in a dynamic environment!</p>
+        </div>
     </div>
 </section>
 
+    
 <section id="education">
     <h2>Education</h2>
     <div class="content">
-        <p>I graduated with a degree in Pharmacy from [University Name]. During my studies, I developed a strong interest in regulatory affairs and pursued relevant coursework to deepen my knowledge in the field.</p>
+        <div class="education-item">
+            <img src="/docs/mcphs-logo-large.jpeg" alt="MCPHS University Logo" class="university-logo">
+            <div>
+                <h3>Massachusetts College of Pharmacy and Health Sciences (MCPHS)</h3>
+                <p><strong>M.S. Regulatory Science | August '24 - July '26</strong></p>
+            </div>
+        </div>
+        <div class="education-item">
+            <img src="/docs/UWS-logo-large.jpg" alt="UWA University Logo" class="university-logo">
+            <div>
+                <h3>The University of Western Australia</h3>
+                <p><strong>M.S. Pharmacy | January '21 - November '22</strong></p>
+                <p><strong>B.S. Biomedical Science | February '18 - December '20</strong></p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -126,14 +295,41 @@
     <h2>Experience</h2>
     <div class="experience">
         <div>
-            <h3>Pharmacy Intern</h3>
-            <p><strong>XYZ Pharmacy</strong> | June 2023 - Present</p>
-            <p>Assisted in drug dispensing, customer service, and maintaining regulatory compliance with pharmacy laws.</p>
+            <h3>Pharmacist</h3>
+            <p><strong>Discount Drug Stores <br/> 
+                February '24 - July '24</strong> | <em>Sydney, Australia</em></p>
+            <ul style="margin-left: 15px">
+                <li><p>Ensured compliance with state and federal regulations by reviewing prescriptions and dispensing medications accurately.</p></li>
+                <li><p>Conducted medication reviews by following evidence-based practice to enhance patient safety and compliance.</p></li>
+                <li><p>Managed CPOP (Community Program for Opioid Substitution) services in the pharmacy:</p>
+                    <ul>
+                        <li><p>Dispensed and compounded medications in accordance with government’s clinical policy and procedure protocols ensuring legal and ethical standards were maintained.</p></li>
+                        <li><p>Monitored the inventory of the medications under this program and maintained proper documentation for each patient to comply with federal regulation.</p></li>
+                    </ul>
+                </li>
+                <li><p>Utilised pharmacy software for inventory management and ensuring accurate record-keeping.</p></li>
+                <li><p>Administered vaccinations (influenza, DTP, and COVID):</p>
+                    <ul>
+                        <li><p>Maintained compliance with COVID vaccination by staying current with changing guidelines ensuring patient safety.</p></li>
+                        <li><p>Documented patient details under mandated requirements while maintaining confidentiality.</p></li>
+                        <li><p>Monitored patients for any vaccine related adverse effects and documented incidents as per the guidelines.</p></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div>
-            <h3>Regulatory Affairs Assistant</h3>
-            <p><strong>ABC Pharmaceuticals</strong> | January 2022 - May 2023</p>
-            <p>Supported the regulatory team in filing documents and ensuring adherence to industry standards for drug approvals.</p>
+            <h3>Intern Pharmacist</h3>
+            <p><strong>Wizard Pharmacy <br/>
+                December '22 - December '23</strong> | <em>Perth, Australia</em></p>
+            <ul>
+                <li><p>Conducted clinical assessments using evidence from reliable sources and integrated with a patient-centred approach to provide holistic care</p></li>
+                <li><p>Communicated effectively with other health professionals to resolve clinical issues, fostering collaboration.</p></li>
+                <li><p>Enhanced patient communication skills by tailoring counselling to individual needs and improving health literacy.</p></li>
+                <li><p>Streamlined the Webster packing process, reducing turnaround time from 5 days to 3 days, improving efficiency.</p></li>
+                <li><p>Developed and implemented efficient methods for processing monthly government-based programs claims, reducing submission time by 25%.</p></li>
+                <li><p>Acquired skills to administered vaccination (influenza, DTP, and COVID) under pharmacist supervision.</p></li>
+                <li><p>Adapted to diverse roles, such as managing DAAs, training junior staff, and performing dispensary tasks, including stock replenishment, scanning paperwork, processing emails/SMS, and claims management.</p></li>
+            </ul>
         </div>
     </div>
 </section>
@@ -141,21 +337,73 @@
 <section id="research">
     <h2>Research</h2>
     <div class="research">
-        <div>
-            <h3>Pharmacovigilance in Drug Safety</h3>
-            <p>Conducted research on the importance of monitoring adverse drug reactions and the role of regulatory agencies in ensuring drug safety.</p>
-        </div>
-        <div>
-            <h3>Regulatory Compliance for Biopharmaceuticals</h3>
-            <p>Worked on a research project that analyzed the regulations surrounding the approval and marketing of biopharmaceutical products in the US.</p>
+        <div class="research-item">
+            <h3>Evaluation of Medication Prescribing Applications Available in Australia</h3>
+            <p class="research-role"><strong>Co-Author</strong> | <em>School of Allied Health, The University of Western Australia</em></p>
+            <p><strong>January '22 - March '23</strong> | <em>Perth, Australia</em></p>
+            <ul class="research-details">
+                <li><p>Conducted extensive research on the global impact of prescribing and delivering apps on patient care, with an emphasis on regulatory frameworks.</p></li>
+                <li>Performed literature reviews on the usage of prescribing and delivery apps in healthcare.</li>
+                <li>Developed a methodology to assess app adherence to national prescribing guidelines.</li>
+                <li>Collaborated with a team of three researchers to draft and revise the paper.</li>
+                <li>Presented findings at the UWA Pharmacy School Research Seminar in Nov '22, advocating for the development of regulatory frameworks for online healthcare tools.</li>
+                <li>Published in the MDPI Journal, March 2023.</li>
+            </ul>
         </div>
     </div>
 </section>
 
-<!-- <footer>
-    <p>&copy; 2025 Riya's Pharmacy Portfolio</p>
-</footer> -->
-<!-- Created with assistance from ChatGPT by OpenAI -->
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div>
+            <h3>Ready To Go Bag</h3>
+            <p><strong>The University of Western Australia and Safety Bay Pharmacy <br/> July '21 - April '22</strong> | <em>Perth, Australia</em></p>
+            <p>Created a ‘To Go Bag’ for elderly patients to take to the hospital in case of emergency admissions. The items included in the bag are small documents with the patient's current medications, medical conditions, emergency contacts, allergies, and contact details for their regular medical practitioner. The document is meant to be carefully filled by their pharmacist and other healthcare professionals. Our goal was to make patients feel prepared for a hospital admission and aid hospital staff to access patients' health information.</p>
+        </div>
+    </div>
+</section>
+
+<section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates">
+        <div>
+            <h3>General Pharmacist Registration</h3>
+            <p><strong>Issued by: Australian Health Practitioner Regulation Agency (AHPRA)</strong> | Validity: January 2024 - January 2026</p>
+        </div>
+        <div>
+            <h3>Standard First Aid, CPR and AED</h3>
+            <p><strong>Issued by: Australian Red Cross Society</strong> | Validity: November 2023 - November 2025</p>
+        </div>
+        <div>
+            <h3>Inclusive Leadership</h3>
+            <p><strong>Issued by: Common Purpose</strong> | Date Obtained: July 2019</p>
+        </div>
+        <div>
+            <h3>Year 12 Certificate of Merit Scholarship</h3>
+            <p><strong>Issued by: School Curriculum and Standards Authority (SCSA)</strong> | Date Obtained: November 2017</p>
+        </div>
+    </div>
+</section>
+
+<!--
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-buttons">
+        <a href="mailto:your-email@example.com" class="contact-button">Email</a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="contact-button">LinkedIn</a>
+        <a href="tel:+1234567890" class="contact-button">Call Me</a>   Optional: Add phone number link 
+    </div>
+</section>
+-->
+
+
+<!--
+<footer>
+    <p>&copy; 2025 Pharmacy Portfolio</p>
+</footer>
+-->
 
 </body>
 </html>
